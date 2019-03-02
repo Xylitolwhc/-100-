@@ -11,6 +11,8 @@
 
 所用硬件：Nexys 4 平台 + VGA接口显示器
 
+![img](https://github.com/Xylitolwhc/MipsCourseDesign/blob/master/README.md_IMG/HardwareDesign.png)
+![img](https://github.com/Xylitolwhc/MipsCourseDesign/blob/master/README.md_IMG/HardwareDesign1.png)
 程序主要源码位于./SDK/SDK_Export/jump/src/jump.c
 
 When I wrote this, only God and I understood what I was doing. Now, God only knows.
