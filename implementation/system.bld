@@ -1,0 +1,228 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -p
+xc7a100tcsg324-2 -nt timestamp -bm system.bmm
+C:/Users/wuhan/Desktop/accelerate/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "C:/Users/wuhan/Desktop/accelerate/implementation/system.ngc"
+...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_rs232_wrapper.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_proc_sys_reset_0_wrappe
+r.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_clock_generator_0_wrapp
+er.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_ilmb_wrapp
+er.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_dlmb_wrapp
+er.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_plb_v46_0_wrapper.ngc".
+..
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi4lite_0_wrapper.ngc"
+...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_wrapper.ng
+c"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_xps_tft_0_wrapper.ngc".
+..
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_i_bram_ctr
+l_wrapper.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_d_bram_ctr
+l_wrapper.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_xps_mch_emc_0_wrapper.n
+gc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi_intc_0_wrapper.ngc"
+...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_debug_module_wrapper.ng
+c"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_generic_spi_wrapper.ngc
+"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi_gpio_0_wrapper.ngc"
+...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi_plbv46_bridge_0_wra
+pper.ngc"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi_timer_0_wrapper.ngc
+"...
+Loading design module
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_bram_block
+_wrapper.ngc"...
+Applying constraints in
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_ilmb_wrapp
+er.ncf" to module "microblaze_0_ilmb"...
+Checking Constraint Associations...
+Applying constraints in
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_dlmb_wrapp
+er.ncf" to module "microblaze_0_dlmb"...
+Checking Constraint Associations...
+Applying constraints in
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi4lite_0_wrapper.ncf"
+to module "axi4lite_0"...
+Checking Constraint Associations...
+Applying constraints in
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_microblaze_0_wrapper.nc
+f" to module "microblaze_0"...
+Checking Constraint Associations...
+Applying constraints in
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_xps_tft_0_wrapper.ncf"
+to module "xps_tft_0"...
+Checking Constraint Associations...
+Applying constraints in
+"C:/Users/wuhan/Desktop/accelerate/implementation/system_axi_intc_0_wrapper.ncf"
+to module "axi_intc_0"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:134 - Constraint <INST
+   /system/EXPANDED/system/xps_tft_0/xps_tft_0\/TFT_CTRL_I\/VSYNC_U3\/V_p_cnt_tc
+   _rstpot1 TNM = TNM_TFT_CLOCK_xps_tft_0>: No appropriate instances for the TNM
+   constraint were found under block
+   "xps_tft_0/xps_tft_0/TFT_CTRL_I/VSYNC_U3/V_p_cnt_tc_rstpot1" (type=LUT6).
+
+WARNING:ConstraintSystem:134 - Constraint <INST
+   /system/EXPANDED/system/xps_tft_0/xps_tft_0\/TFT_CTRL_I\/VSYNC_U3\/V_p_cnt_tc
+   _rstpot1_SW0 TNM = TNM_TFT_CLOCK_xps_tft_0>: No appropriate instances for the
+   TNM constraint were found under block
+   "xps_tft_0/xps_tft_0/TFT_CTRL_I/VSYNC_U3/V_p_cnt_tc_rstpot1_SW0" (type=LUT2).
+
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_sl
+   ot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0 TNM =
+   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
+   "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/int
+   erconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'TNM_TFT_CLOCK_xps_tft_0', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+WARNING:ConstraintSystem:194 - The TNM 'TNM_TFT_CLOCK_xps_tft_0', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into MMCME2_ADV instance
+   clock_generator_0/MMCM1_INST/MMCM_ADV_inst. The following new TNM groups and
+   period specifications were generated at the MMCME2_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT1 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT1" TS_sys_clk_pin
+   * 0.25 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into MMCME2_ADV instance
+   clock_generator_0/MMCM1_INST/MMCM_ADV_inst. The following new TNM groups and
+   period specifications were generated at the MMCME2_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0" TS_sys_clk_pin
+   * 0.9 HIGH 50%>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "CLOCK_HOLD" is not allowed on symbol
+   "clock_generator_0/MMCM1_INST/MMCM_ADV_inst" of type "MMCME2_ADV".  This
+   attribute will be ignored.
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_tft_0/xps_tft_0/PLBV46_MASTER_BURST_I/I_RD_WR_CONTROL/I_RDSOP_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_tft_0/xps_tft_0/PLBV46_MASTER_BURST_I/I_RD_WR_CONTROL/I_WRERR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_tft_0/xps_tft_0/PLBV46_MASTER_BURST_I/I_RD_WR_CONTROL/I_RDERR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_tft_0/xps_tft_0/PLBV46_MASTER_BURST_I/I_RD_WR_CONTROL/I_FIFO_REN_WRACK_R
+   EG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I
+   _BKEND_WRCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I
+   _BKEND_RDCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0
+   ].I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG
+   [0].I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.
+   I_ADDSUB_GEN[6].FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I
+   _ADDSUB_GEN[6].FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[
+   31].ADDRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[
+   30].ADDRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC
+   _ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_EN_REG_ASYNC' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIG
+   N_PIPE_GEN[1].AALIGN_PIPE' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_mch_emc_0/xps_mch_emc_0/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIP
+   E_GEN[6].READ_COMPLETE_PIPE' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  24
+
+Total memory usage is 231056 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  51 sec
+Total CPU time to NGDBUILD completion:   48 sec
+
+Writing NGDBUILD log file "system.bld"...

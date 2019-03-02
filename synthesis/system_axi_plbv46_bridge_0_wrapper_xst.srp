@@ -1,0 +1,709 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\wuhan\Desktop\accelerate\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_axi_plbv46_bridge_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\wuhan\Desktop\accelerate\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7a100tcsg324-2
+Output File Name                   : "../implementation/system_axi_plbv46_bridge_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_axi_plbv46_bridge_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_plbv46_bridge_pkg.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing package <axi_plbv46_bridge_pkg>.
+Parsing package body <axi_plbv46_bridge_pkg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_lite_plbv46_bridge.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <axi_lite_plbv46_bridge>.
+Parsing architecture <rtl> of entity <axi_lite_plbv46_bridge>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/xfer_qual_gen.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <xfer_qual_gen>.
+Parsing architecture <imp> of entity <xfer_qual_gen>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/xfer_qual_reg.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <xfer_qual_reg>.
+Parsing architecture <imp> of entity <xfer_qual_reg>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/fifo_fwft_2deep.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <fifo_fwft_2deep>.
+Parsing architecture <imp> of entity <fifo_fwft_2deep>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/fifo_fwft.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <fifo_fwft>.
+Parsing architecture <imp> of entity <fifo_fwft>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/comp_defs.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing package <comp_defs>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/width_conv_gen.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <width_conv_gen>.
+Parsing architecture <imp> of entity <width_conv_gen>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/reg_pipe.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <reg_pipe>.
+Parsing architecture <imp> of entity <reg_pipe>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/reg_interface.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <reg_interface>.
+Parsing architecture <rtl> of entity <reg_interface>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_width_conv_gen.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_width_conv_gen>.
+Parsing architecture <imp> of entity <wr_width_conv_gen>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_data_sm_full_word.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_data_sm_full_word>.
+Parsing architecture <imp> of entity <wr_data_sm_full_word>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_data_sm_narrow.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_data_sm_narrow>.
+Parsing architecture <imp> of entity <wr_data_sm_narrow>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_data_fifo.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_data_fifo>.
+Parsing architecture <imp> of entity <wr_data_fifo>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_addr_sm.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_addr_sm>.
+Parsing architecture <imp> of entity <wr_addr_sm>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_addr_gen.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_addr_gen>.
+Parsing architecture <imp> of entity <wr_addr_gen>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/burst_logic.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <burst_logic>.
+Parsing architecture <imp> of entity <burst_logic>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/wr_resp.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <wr_resp>.
+Parsing architecture <imp> of entity <wr_resp>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi4_wr_plbv46_bridge.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <axi4_wr_plbv46_bridge>.
+Parsing architecture <imp> of entity <axi4_wr_plbv46_bridge>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/rd_addr_sm.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <rd_addr_sm>.
+Parsing architecture <imp> of entity <rd_addr_sm>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/rd_data_fifo.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <rd_data_fifo>.
+Parsing architecture <imp> of entity <rd_data_fifo>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/rd_data_sm.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <rd_data_sm>.
+Parsing architecture <imp> of entity <rd_data_sm>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi4_rd_plbv46_bridge.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <axi4_rd_plbv46_bridge>.
+Parsing architecture <imp> of entity <axi4_rd_plbv46_bridge>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/plb_wr_rd_sel.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <plb_wr_rd_sel>.
+Parsing architecture <imp> of entity <plb_wr_rd_sel>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi4_plbv46_bridge.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <axi4_plbv46_bridge>.
+Parsing architecture <imp> of entity <axi4_plbv46_bridge>.
+Parsing VHDL file "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_plbv46_bridge.vhd" into library axi_plbv46_bridge_v2_02_a
+Parsing entity <axi_plbv46_bridge>.
+Parsing architecture <imp> of entity <axi_plbv46_bridge>.
+Parsing VHDL file "C:\Users\wuhan\Desktop\accelerate\hdl\system_axi_plbv46_bridge_0_wrapper.vhd" into library work
+Parsing entity <system_axi_plbv46_bridge_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_axi_plbv46_bridge_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_axi_plbv46_bridge_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_plbv46_bridge> (architecture <imp>) with generics from library <axi_plbv46_bridge_v2_02_a>.
+
+Elaborating entity <axi_lite_plbv46_bridge> (architecture <rtl>) with generics from library <axi_plbv46_bridge_v2_02_a>.
+INFO:HDLCompiler:679 - "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_lite_plbv46_bridge.vhd" Line 534. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_lite_plbv46_bridge.vhd" Line 548: Assignment to pr_state_resp ignored, since the identifier is never used
+WARNING:HDLCompiler:321 - "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_plbv46_bridge.vhd" Line 840: Comparison between arrays of unequal length always returns FALSE.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_axi_plbv46_bridge_0_wrapper>.
+    Related source file is "C:\Users\wuhan\Desktop\accelerate\hdl\system_axi_plbv46_bridge_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_axi_plbv46_bridge_0_wrapper> synthesized.
+
+Synthesizing Unit <axi_plbv46_bridge>.
+    Related source file is "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_plbv46_bridge.vhd".
+        C_FAMILY = "artix7"
+        C_INSTANCE = "axi_plbv46_bridge_0"
+        C_EN_BYTE_SWAP = 0
+        C_EN_DEBUG_REG = 0
+        C_S_AXI_PROTOCOL = "AXI4LITE"
+        C_S_AXI_SUPPORTS_NARROW_BURST = 0
+        C_S_AXI_SUPPORTS_EXCL_ACCESS = 0
+        C_S_AXI_ID_WIDTH = 1
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_SUPPORTS_WRITE = 1
+        C_S_AXI_SUPPORTS_READ = 1
+        C_S_AXI_WRITE_ACCEPTANCE = 1
+        C_S_AXI_READ_ACCEPTANCE = 1
+        C_S_AXI_SUPPORT_BARRIERS = 0
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+        C_S_AXI_CTRL_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_CTRL_HIGHADDR = "00000000000000000000000000000000"
+        C_MPLB_AWIDTH = 32
+        C_MPLB_DWIDTH = 64
+        C_MPLB_NATIVE_DWIDTH = 32
+        C_MPLB_SMALLEST_SLAVE = 32
+        C_PLB_ADDR_PIPELINE = 0
+WARNING:Xst:647 - Input <S_AXI_AWID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWLEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWSIZE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWBURST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_AWCACHE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARLEN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARSIZE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARBURST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_AWADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_WDATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_ARADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WLAST> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_AWVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_WVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_BREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_ARVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_RREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <axi_plbv46_bridge> synthesized.
+
+Synthesizing Unit <axi_lite_plbv46_bridge>.
+    Related source file is "D:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_plbv46_bridge_v2_02_a/hdl/vhdl/axi_lite_plbv46_bridge.vhd".
+        C_FAMILY = "artix7"
+        C_EN_BYTE_SWAP = 0
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_MPLB_AWIDTH = 32
+        C_MPLB_DWIDTH = 64
+        C_MPLB_NATIVE_DWIDTH = 32
+WARNING:Xst:647 - Input <S_AXI_ARADDR<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MSSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MRdDBus<32:63>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MRdWdAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MPLB_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MPLB_Rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MRearbitrate> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MRdBTerm> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MWrBTerm> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MBusy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MIRQ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <pr_state>.
+    Found 1-bit register for signal <pr_state_idle>.
+    Found 1-bit register for signal <rnw_reg>.
+    Found 1-bit register for signal <S_AXI_AWREADY>.
+    Found 1-bit register for signal <S_AXI_WREADY>.
+    Found 1-bit register for signal <S_AXI_ARREADY>.
+    Found 32-bit register for signal <awaddr_int>.
+    Found 1-bit register for signal <M_request>.
+    Found 1-bit register for signal <M_RNW>.
+    Found 32-bit register for signal <M_ABus>.
+    Found 4-bit register for signal <m_be_int>.
+    Found 32-bit register for signal <m_wrdbus_int>.
+    Found 1-bit register for signal <S_AXI_BVALID>.
+    Found 1-bit register for signal <S_AXI_BRESP<1>>.
+    Found 1-bit register for signal <S_AXI_BRESP<0>>.
+    Found 32-bit register for signal <S_AXI_RDATA>.
+    Found 1-bit register for signal <S_AXI_RVALID>.
+    Found 1-bit register for signal <S_AXI_RRESP<1>>.
+    Found 1-bit register for signal <S_AXI_RRESP<0>>.
+    Found 1-bit register for signal <pend_wr>.
+    Found finite state machine <FSM_0> for signal <pr_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 1                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | S_AXI_ARESET (positive)                        |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 146 D-type flip-flop(s).
+	inferred  60 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <axi_lite_plbv46_bridge> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 19
+ 1-bit register                                        : 14
+ 32-bit register                                       : 4
+ 4-bit register                                        : 1
+# Multiplexers                                         : 60
+ 1-bit 2-to-1 multiplexer                              : 60
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <awaddr_int_0> of sequential type is unconnected in block <axi_lite_plbv46_bridge>.
+WARNING:Xst:2677 - Node <awaddr_int_1> of sequential type is unconnected in block <axi_lite_plbv46_bridge>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 144
+ Flip-Flops                                            : 144
+# Multiplexers                                         : 60
+ 1-bit 2-to-1 multiplexer                              : 60
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/FSM_0> on signal <pr_state[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ wait_dack | 01
+ resp      | 10
+-----------------------
+
+Optimizing unit <system_axi_plbv46_bridge_0_wrapper> ...
+
+Optimizing unit <axi_lite_plbv46_bridge> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_axi_plbv46_bridge_0_wrapper, actual ratio is 0.
+FlipFlop axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pend_wr has been replicated 1 time(s)
+FlipFlop axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/rnw_reg has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 149
+ Flip-Flops                                            : 149
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_axi_plbv46_bridge_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 123
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 6
+#      LUT3                        : 37
+#      LUT4                        : 4
+#      LUT5                        : 36
+#      LUT6                        : 38
+# FlipFlops/Latches                : 149
+#      FD                          : 2
+#      FDR                         : 15
+#      FDRE                        : 132
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             149  out of  126800     0%  
+ Number of Slice LUTs:                  122  out of  63400     0%  
+    Number used as Logic:               122  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    155
+   Number with an unused Flip Flop:       6  out of    155     3%  
+   Number with an unused LUT:            33  out of    155    21%  
+   Number of fully used LUT-FF pairs:   116  out of    155    74%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                         583
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                         | Load  |
+-----------------------------------+-------------------------------------------------------------------------------+-------+
+MPLB_Clk                           | NONE(axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_FSM_FFd2)| 149   |
+-----------------------------------+-------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.710ns (Maximum Frequency: 584.772MHz)
+   Minimum input arrival time before clock: 1.751ns
+   Maximum output required time after clock: 0.398ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MPLB_Clk'
+  Clock period: 1.710ns (frequency: 584.772MHz)
+  Total number of paths / destination ports: 514 / 217
+-------------------------------------------------------------------------
+Delay:               1.710ns (Levels of Logic = 2)
+  Source:            axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/rnw_reg_1 (FF)
+  Destination:       axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/M_ABus_0 (FF)
+  Source Clock:      MPLB_Clk rising
+  Destination Clock: MPLB_Clk rising
+
+  Data Path: axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/rnw_reg_1 to axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/M_ABus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.398   0.599  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/rnw_reg_1 (axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/rnw_reg_1)
+     LUT6:I3->O           38   0.105   0.488  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/arready_cmb1 (axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/arready_cmb)
+     LUT5:I4->O            1   0.105   0.000  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/Mmux_S_AXI_AWADDR[3]_S_AXI_ARADDR[3]_MUX_105_o11 (axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/S_AXI_AWADDR[3]_S_AXI_ARADDR[3]_MUX_105_o)
+     FDRE:D                    0.015          axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/M_ABus_28
+    ----------------------------------------
+    Total                      1.710ns (0.623ns logic, 1.087ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MPLB_Clk'
+  Total number of paths / destination ports: 825 / 328
+-------------------------------------------------------------------------
+Offset:              1.751ns (Levels of Logic = 3)
+  Source:            PLB_MWrDAck (PAD)
+  Destination:       axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_idle (FF)
+  Destination Clock: MPLB_Clk rising
+
+  Data Path: PLB_MWrDAck to axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_idle
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            2   0.105   0.798  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_FSM_FFd1-In_SW0 (N2)
+     LUT6:I0->O            2   0.105   0.362  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_FSM_FFd1-In (axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_FSM_FFd1-In)
+     LUT6:I5->O            1   0.105   0.000  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_nx_state_idle1 (axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/nx_state_idle)
+     FDR:D                     0.015          axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/pr_state_idle
+    ----------------------------------------
+    Total                      1.751ns (0.590ns logic, 1.161ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MPLB_Clk'
+  Total number of paths / destination ports: 147 / 147
+-------------------------------------------------------------------------
+Offset:              0.398ns (Levels of Logic = 0)
+  Source:            axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/S_AXI_BRESP_1 (FF)
+  Destination:       S_AXI_BRESP<1> (PAD)
+  Source Clock:      MPLB_Clk rising
+
+  Data Path: axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/S_AXI_BRESP_1 to S_AXI_BRESP<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.398   0.000  axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/S_AXI_BRESP_1 (axi_plbv46_bridge_0/AXI_LITE_PLB_GEN.AXI_LITE_BRIDGE_I/S_AXI_BRESP_1)
+    ----------------------------------------
+    Total                      0.398ns (0.398ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock MPLB_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MPLB_Clk       |    1.710|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.40 secs
+ 
+--> 
+
+Total memory usage is 374700 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

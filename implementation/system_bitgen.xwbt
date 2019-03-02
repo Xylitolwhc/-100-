@@ -1,0 +1,7 @@
+INFILE=C:\Users\wuhan\Desktop\accelerate\implementation\system.ncd
+OUTFILE=C:\Users\wuhan\Desktop\accelerate\implementation\system.bit
+FAMILY=Artix7
+PART=xc7a100t-2csg324
+WORKINGDIR=C:\Users\wuhan\Desktop\accelerate\implementation
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661
